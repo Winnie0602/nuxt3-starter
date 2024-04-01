@@ -24,7 +24,8 @@
   - https://nuxt.com/docs/guide/directory-structure/app-config
 
 ## envs
-- /envs/*
+
+- /envs/\*
 
 ## module
 
@@ -33,9 +34,27 @@
 - @pinia/nuxt
   - pinia
 
+## docker
+
+- docker/Dockerfile
+- build.sh
+
+```sh
+# build & run
+sh ./docker/build.sh
+```
+
+## pm2
+
+- ecosystem.config.json
+
 ## nuxi
 
 ```sh
+# add
 npx nuxi add layout default
 npx nuxi add page index
+
+# update
+npx nuxi upgrade
 ```
