@@ -25,7 +25,7 @@
 
 ## envs
 
-- /envs/\*
+- /envs/\*.env
 
 ## module
 
