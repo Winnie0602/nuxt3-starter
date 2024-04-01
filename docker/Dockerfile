@@ -15,7 +15,7 @@ RUN npm install
 
 COPY . .
 
-COPY ./envs/${ENV}.env .env
+COPY ./envs/${ENV} .env
 
 RUN npm run build
 
