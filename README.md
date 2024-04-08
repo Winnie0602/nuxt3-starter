@@ -58,3 +58,19 @@ npx nuxi add page index
 # update
 npx nuxi upgrade
 ```
+
+## git
+
+- commitizen
+
+```sh
+npm i commitizen
+
+npx commitizen init cz-conventional-changelog
+
+# run
+npx cz
+
+# or, package.json add scripts: "commit": "cz"
+npm run commit
+```
