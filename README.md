@@ -83,17 +83,11 @@ npx nuxi upgrade
   # install
   npm i @commitlint/cli @commitlint/cz-commitlint @commitlint/config-conventional
 
+  # set path
+  npm pkg set config.commitizen.path="@commitlint/cz-commitlint"
+
   # test
   npm run commit
-  ```
-
-  ```json
-  // package.json
-    "config": {
-      "commitizen": {
-        "path": "@commitlint/cz-commitlint"
-      }
-    }
   ```
 
 - husky
@@ -105,7 +99,8 @@ npx nuxi upgrade
   # init
   npx husky init
 
-  # npm pkg set scripts.commitlint="commitlint --edit"
+  # add scripts
+  npm pkg set scripts.commitlint="commitlint --edit"
 
   # set commit-msg
   echo "npm run commitlint \${1}" > .husky/commit-msg
