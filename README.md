@@ -63,14 +63,56 @@ npx nuxi upgrade
 
 - commitizen
 
-```sh
-npm i commitizen
+  ```sh
+  # install
+  npm i commitizen
 
-npx commitizen init cz-conventional-changelog
+  # init
+  npx commitizen init cz-conventional-changelog
 
-# run
-npx cz
+  # run
+  npx cz
 
-# or, package.json add scripts: "commit": "cz"
-npm run commit
-```
+  # or, package.json add scripts: "commit": "cz"
+  npm run commit
+  ```
+
+- commitlint
+
+  ```sh
+  # install
+  npm i @commitlint/cli @commitlint/cz-commitlint @commitlint/config-conventional
+
+  # test
+  npm run commit
+  ```
+
+  ```json
+  // package.json
+    "config": {
+      "commitizen": {
+        "path": "@commitlint/cz-commitlint"
+      }
+    }
+  ```
+
+- husky
+
+  ```sh
+  # install
+  npm i husky
+
+  # init
+  npx husky init
+
+  # npm pkg set scripts.commitlint="commitlint --edit"
+
+  # set commit-msg
+  echo "npm run commitlint \${1}" > .husky/commit-msg
+
+  # remove pre-commit
+  rm .husky/pre-commit
+
+  # test
+  npm run commit
+  ```
