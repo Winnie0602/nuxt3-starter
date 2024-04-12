@@ -1,21 +1,19 @@
-# Nuxt 3 - Starter
+# Nuxt3 - Starter
 
 ## lint
 
 - .editorconfig
 - eslint
-  - .eslintignore
-  - .eslintrc
-  - @nuxtjs/eslint-config-typescript
-  - @nuxtjs/eslint-module
-  - eslint
-  - eslint-config-prettier
-  - eslint-plugin-prettier
+  - @nuxt/eslint
+  ```sh
+  npx nuxi module add eslint
+  ```
 - prettier
   - .prettierignore
   - .prettierrc
-  - prettier
-  - prettier-plugin-tailwindcss
+  ```sh
+  npm i prettier prettier-plugin-tailwindcss
+  ```
 
 ## typescript
 
@@ -27,12 +25,21 @@
 
 - /envs/\*.env
 
-## module
+## ui
 
-- @nuxtjs/eslint-module
 - @nuxt/ui
+
+  ```sh
+  npm i @nuxt/ui
+  ```
+
+## store
+
 - @pinia/nuxt
-  - pinia
+
+  ```sh
+  npm i pinia @pinia/nuxt
+  ```
 
 ## docker
 
@@ -124,4 +131,10 @@ npx nuxi upgrade
   npx taze -w
 
   npm outdated
+  ```
+
+- test
+
+  ```sh
+  npm i @nuxt/test-utils vitest @vue/test-utils happy-dom playwright-core
   ```
