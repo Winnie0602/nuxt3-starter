@@ -1,0 +1,14 @@
+{
+  // Enable ESlint flat config support
+  // https://eslint.nuxt.com/packages/module#vs-code
+  "eslint.experimental.useFlatConfig": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
