@@ -39,14 +39,18 @@
 - docker/Dockerfile
 - build.sh
 
-```sh
-# build & run
-sh ./docker/build.sh
-```
+  ```sh
+  # build & run
+  sh ./docker/build.sh
+  ```
 
 ## pm2
 
 - ecosystem.config.json
+
+  ```sh
+  pm2 start ecosystem.config.json
+  ```
 
 ## nuxi
 
@@ -110,4 +114,14 @@ npx nuxi upgrade
 
   # test
   npm run commit
+  ```
+
+- update
+
+  ```sh
+  npx nuxi upgrade
+
+  npx taze -w
+
+  npm outdated
   ```
