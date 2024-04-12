@@ -123,18 +123,18 @@ npx nuxi upgrade
   npm run commit
   ```
 
-- update
+## update
 
-  ```sh
-  npx nuxi upgrade
+```sh
+npx nuxi upgrade
 
-  npx taze -w
+npx taze -w
 
-  npm outdated
-  ```
+npm outdated
+```
 
-- test
+## test
 
-  ```sh
-  npm i @nuxt/test-utils vitest @vue/test-utils happy-dom playwright-core
-  ```
+```sh
+npm i @nuxt/test-utils vitest @vue/test-utils happy-dom playwright-core
+```
