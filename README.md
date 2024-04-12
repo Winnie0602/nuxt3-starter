@@ -135,6 +135,15 @@ npm outdated
 
 ## test
 
+- vitest.config.ts
+
 ```sh
 npm i @nuxt/test-utils vitest @vue/test-utils happy-dom playwright-core
 ```
+
+## svg
+
+- @nuxtjs/svg-sprite
+  ```sh
+  npm i @nuxtjs/svg-sprite
+  ```

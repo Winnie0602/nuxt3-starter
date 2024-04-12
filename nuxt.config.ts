@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/test-utils/module',
     '@nuxt/ui',
+    '@nuxtjs/svg-sprite',
     '@pinia/nuxt',
   ],
 
