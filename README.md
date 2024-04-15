@@ -131,6 +131,8 @@ npx nuxi upgrade
 npx taze -w
 
 npm outdated
+
+npx nuxi typecheck
 ```
 
 ## test
@@ -138,7 +140,17 @@ npm outdated
 - vitest.config.ts
 
 ```sh
+# install
 npm i @nuxt/test-utils vitest @vue/test-utils happy-dom playwright-core
+
+# e2e
+npm i playwright
+
+# folder
+npx vitest --dir ./components
+
+# coverage
+npx vitest --coverage
 ```
 
 ## svg

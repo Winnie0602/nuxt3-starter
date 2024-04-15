@@ -25,4 +25,8 @@ export default defineNuxtConfig({
       titleTemplate: '%s - Nuxt3 Starter',
     },
   },
+
+  colorMode: {
+    preference: 'light',
+  },
 })
