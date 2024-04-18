@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>Test</h1>
-    <TestCaseIncrease />
+    <Increase />
+    <FetchData :id="1123" />
   </div>
 </template>
